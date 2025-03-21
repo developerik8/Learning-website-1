@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WasteWise Academy - Explore types of waste</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="hero-banner.png">
+  <link rel="preload" as="image" href="hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="hero-abs-2.png" media="min-width(768px)">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">WasteWise Academy</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Philately Academy</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="https://ranojitdas.github.io/Philatelix_ecommerce_store/" class="navbar-link" data-nav-toggler>WasteWise Store</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://ranojitdas.github.io/Philatelix_LearningHub/" class="navbar-link" data-nav-toggler>WasteWise Academy</a>
+          </li>
+
+          <li class="navbar-item"></li>
+            <a href="#courses" class="navbar-link" data-nav-toggler>Community</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://ranojitdas.github.io/Philatelix_Quizapp/" class="navbar-link" data-nav-toggler>Quiz</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Explore the World of Waste Management</p>
+
+            <h2 class="h1 hero-title">WasteWise Academy</h2>
+            
+            <p class="hero-text">
+              Learn about sustainable waste management practices, e-waste recycling, and eco-friendly solutions through interactive courses and expert-led workshops.
+            </p>
+            
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Get Started Today</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <img src="hero-banner.png" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <img src="hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+   
+    <!-- LEARNING MODULES -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Learning Modules</p>
+
+          <h2 class="h2 section-title">Popular Topics To Learn</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+            
+                <figure class="card-banner">
+                  <img src="course-1.jpg" width="370" height="270" loading="lazy"
+                    alt="Introduction to Waste Management" class="img-cover">
+                </figure>
+            
+                <div class="card-actions">
+                  <span class="badge">15th Oct 2024</span>
+                  <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+                </div>
+            
+                <div class="card-content">
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                      <span class="card-meta-text">35 Lessons</span>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                    </li>
+            
+                  </ul>
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Introduction to Waste Management</a>
+                  </h3>
+            
+                  <div class="rating-wrapper">
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <span class="rating-text">(18 Reviews)</span>
+                  </div>
+            
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">Register Now</span>
+                    </div>
+                  </div>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            <li>
+              <div class="course-card">
+            
+                <figure class="card-banner">
+                  <img src="course-2.jpg" width="370" height="270" loading="lazy"
+                    alt="E-Waste Recycling Techniques" class="img-cover">
+                </figure>
+            
+                <div class="card-actions">
+                  <span class="badge">22nd Nov 2024</span>
+                  <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+                </div>
+            
+                <div class="card-content">
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                      <span class="card-meta-text">48 Lessons</span>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <time datetime="PT18H15M44S" class="card-meta-text">20h 30m 12s</time>
+                    </li>
+            
+                  </ul>
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">E-Waste Recycling Techniques</a>
+                  </h3>
+            
+                  <div class="rating-wrapper">
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <span class="rating-text">(22 Reviews)</span>
+                  </div>
+            
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">Register Now</span>
+                    </div>
+                  </div>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            <li>
+              <div class="course-card">
+            
+                <figure class="card-banner">
+                  <img src="course-3.jpg" width="370" height="270" loading="lazy"
+                    alt="Composting for Beginners" class="img-cover">
+                </figure>
+            
+                <div class="card-actions">
+                  <span class="badge">5th Dec 2024</span>
+                  <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+                </div>
+            
+                <div class="card-content">
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                      <span class="card-meta-text">25 Lessons</span>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <time datetime="PT12H45M30S" class="card-meta-text">12h 45m 30s</time>
+                    </li>
+            
+                  </ul>
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Composting for Beginners</a>
+                  </h3>
+            
+                  <div class="rating-wrapper">
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <span class="rating-text">(12 Reviews)</span>
+                  </div>
+            
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">Register Now</span>
+                    </div>
+                  </div>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            <li>
+              <div class="course-card">
+            
+                <figure class="card-banner">
+                  <img src="course-4.jpg" width="370" height="270" loading="lazy"
+                    alt="Waste-to-Energy Solutions" class="img-cover">
+                </figure>
+            
+                <div class="card-actions">
+                  <span class="badge">20th Dec 2024</span>
+                  <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+                </div>
+            
+                <div class="card-content">
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                      <span class="card-meta-text">31 Lessons</span>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <time datetime="PT22H10M44S" class="card-meta-text">22h 10m 44s</time>
+                    </li>
+            
+                  </ul>
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Waste-to-Energy Solutions</a>
+                  </h3>
+            
+                  <div class="rating-wrapper">
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <span class="rating-text">(20 Reviews)</span>
+                  </div>
+            
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">Register Now</span>
+                    </div>
+                  </div>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            </ul>
+            
+            <a href="#" class="btn btn-primary">
+              <span class="span">View All Webinars</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            
+      
+          </div>
+      
+        </div>
+      </section>
+      
+
+
+
+
+<!-- WEBINARS & WORKSHOPS -->
+
+<section class="section course" id="courses" aria-label="course"
+  style="background-image: url('waste-bg.jpg')">
+  <div class="container">
+
+    <p class="section-subtitle">Webinars & Workshops</p>
+
+    <h2 class="h2 section-title">Learn From Sustainability Experts</h2>
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="course-card">
+
+          <figure class="card-banner">
+            <img src="about-abs-1.jpg" width="370" height="270" loading="lazy"
+              alt="Waste Reduction Strategies" class="img-cover">
+          </figure>
+
+          <div class="card-actions">
+
+            <span class="badge">15th Oct 2024</span>
+            <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+              <ion-icon name="heart"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="card-content">
+
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                <span class="card-meta-text">30 Lessons</span>
+              </li>
+
+              <li class="card-meta-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <time datetime="PT10H30M" class="card-meta-text">10h 30m</time>
+              </li>
+
+            </ul>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Waste Reduction Strategies</a>
+            </h3>
+
+            <div class="rating-wrapper">
+
+              <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half"></ion-icon>
+              </div>
+
+              <span class="rating-text">(24 Reviews)</span>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-price">
+                <span class="span">Register Now</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="course-card">
+
+          <figure class="card-banner">
+            <img src="course-2.jpg" width="370" height="270" loading="lazy"
+              alt="Innovative Recycling Techniques" class="img-cover">
+          </figure>
+
+          <div class="card-actions">
+
+            <span class="badge">22nd Nov 2024</span>
+            <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+              <ion-icon name="heart"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="card-content">
+
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                <span class="card-meta-text">45 Lessons</span>
+              </li>
+
+              <li class="card-meta-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <time datetime="PT12H00M" class="card-meta-text">12h 00m</time>
+              </li>
+
+            </ul>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Innovative Recycling Techniques</a>
+            </h3>
+
+            <div class="rating-wrapper">
+
+              <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+              <span class="rating-text">(32 Reviews)</span>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-price">
+                <span class="span">Register Now</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="course-card">
+
+          <figure class="card-banner">
+            <img src="course-3.jpg" width="370" height="270" loading="lazy"
+              alt="E-Waste Management Essentials" class="img-cover">
+          </figure>
+
+          <div class="card-actions">
+
+            <span class="badge">5th Dec 2024</span>
+            <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+              <ion-icon name="heart"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="card-content">
+
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                <span class="card-meta-text">50 Lessons</span>
+              </li>
+
+              <li class="card-meta-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <time datetime="PT15H00M" class="card-meta-text">15h 00m</time>
+              </li>
+
+            </ul>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">E-Waste Management Essentials</a>
+            </h3>
+
+            <div class="rating-wrapper">
+
+              <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+
+              <span class="rating-text">(27 Reviews)</span>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-price">
+                <span class="span">Register Now</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="course-card">
+
+          <figure class="card-banner">
+            <img src="course-6.jpg" width="370" height="270" loading="lazy"
+              alt="Zero-Waste Living Tips" class="img-cover">
+          </figure>
+
+          <div class="card-actions">
+
+            <span class="badge">20th Dec 2024</span>
+            <button class="whishlist-btn" aria-label="Add to wishlist" data-whish-btn>
+              <ion-icon name="heart"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="card-content">
+
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                <span class="card-meta-text">40 Lessons</span>
+              </li>
+
+              <li class="card-meta-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <time datetime="PT08H00M" class="card-meta-text">8h 00m</time>
+              </li>
+
+            </ul>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Zero-Waste Living Tips</a>
+            </h3>
+
+            <div class="rating-wrapper">
+
+              <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half"></ion-icon>
+              </div>
+
+              <span class="rating-text">(20 Reviews)</span>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="card-price">
+                <span class="span">Register Now</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <a href="#" class="btn btn-primary">
+      <span class="span">View All Webinars</span>
+      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+  </div>
+</section>
+
+
+
+
+<!-- 
+  - #CTA - Waste Management Workshop
+-->
+
+<section class="section cta" aria-label="workshop" style="background-image: url('waste-cta-bg.jpg')">
+  <div class="container">
+
+    <figure class="cta-banner">
+      <img src="cta-banner.jpg" width="580" height="380" loading="lazy" alt="cta banner"
+        class="img-cover">
+    </figure>
+
+    <div class="cta-content">
+
+      <p class="section-subtitle">Free Sustainability Workshop</p>
+
+      <h2 class="h2 section-title">Learn Waste Management Techniques</h2>
+
+      <p class="section-text">
+        Join our free workshops to learn effective waste reduction strategies, recycling techniques, and eco-friendly practices
+        from industry experts. Let's work together towards a sustainable future.
+      </p>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="span">Upcoming Workshop</span>
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 
+  - #EVENT - Waste Management Events
+-->
+
+<section class="section event" id="event" aria-label="event">
+  <div class="container">
+
+    <p class="section-subtitle">Upcoming Events</p>
+
+    <h2 class="h2 section-title">Join Our Sustainability Community</h2>
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="event-card">
+          <figure class="card-banner">
+            <img src="event-3.jpg" width="370" height="250" loading="lazy" alt="Recycling Summit" class="img-cover">
+          </figure>
+          <time class="badge" datetime="2024-09-15">15th Sept 2024</time>
+          <div class="card-content">
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Green Convention Center, Mumbai, India</span>
+            </address>
+            <h3 class="h3">
+              <a href="#" class="card-title">National Recycling Summit</a>
+            </h3>
+            <a href="#" class="btn-link">
+              <span class="span">Get Ticket</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="event-card">
+          <figure class="card-banner">
+            <img src="event-1.jpg" width="370" height="250" loading="lazy" alt="Eco-Friendly Workshop" class="img-cover">
+          </figure>
+          <time class="badge" datetime="2024-10-10">10th Oct 2024</time>
+          <div class="card-content">
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Eco Center, Bengaluru, India</span>
+            </address>
+            <h3 class="h3">
+              <a href="#" class="card-title">Eco-Friendly Waste Management Workshop</a>
+            </h3>
+            <a href="#" class="btn-link">
+              <span class="span">Get Ticket</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="event-card">
+          <figure class="card-banner">
+            <img src="event-2.jpg" width="370" height="250" loading="lazy" alt="E-Waste Seminar" class="img-cover">
+          </figure>
+          <time class="badge" datetime="2024-11-20">20th Nov 2024</time>
+          <div class="card-content">
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Tech Park, Hyderabad, India</span>
+            </address>
+            <h3 class="h3">
+              <a href="#" class="card-title">E-Waste Management Seminar</a>
+            </h3>
+            <a href="#" class="btn-link">
+              <span class="span">Get Ticket</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="event-card">
+          <figure class="card-banner">
+            <img src="event-3.jpg" width="370" height="250" loading="lazy" alt="Plastic Reduction Seminar" class="img-cover">
+          </figure>
+          <time class="badge" datetime="2024-12-05">5th Dec 2024</time>
+          <div class="card-content">
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Innovation Hub, Delhi, India</span>
+            </address>
+            <h3 class="h3">
+              <a href="#" class="card-title">Plastic Reduction Strategies</a>
+            </h3>
+            <a href="#" class="btn-link">
+              <span class="span">Get Ticket</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+<!-- 
+  - #NEWSLETTER - Sustainability Updates
+-->
+
+<section class="section newsletter" aria-label="newsletter"
+  style="background-image: url('newsletter-bg.jpg')">
+  <div class="container">
+
+    <p class="section-subtitle">Subscribe for Updates</p>
+
+    <h2 class="h2 section-title">Get the Latest News on Waste Management</h2>
+
+    <form action="" class="newsletter-form">
+
+      <div class="input-wrapper">
+        <input type="email" name="email_address" aria-label="email" placeholder="Enter your email address" required
+          class="email-field">
+
+        <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        <span class="span">Subscribe</span>
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">WasteWise Academy</a>
+
+          <p class="section-text">
+            Your gateway to the world of 3R Waste management, learning, and community.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Upcoming Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ Question</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Useful Links</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              275 Quadra Street Victoria Road, New York
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">+ 1 (364) 765-7839</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657840" class="footer-link">+ 1 (364) 765-7840</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:contact@eduhome.com" class="footer-link">contact@eduhome.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2022 EduHome. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
